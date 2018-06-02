@@ -1,0 +1,17 @@
+.header-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 36px 10px;
+  @extend %space-between;
+}
+
+.header__nav {
+  align-self: center;
+}

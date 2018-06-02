@@ -55,7 +55,7 @@ gulp.task('sass', function () {
         //     type     :    'px-to-rem',
         //     rootSize :    16
         // }))
-        .pipe(gp.csso())
+        // .pipe(gp.csso())
         .pipe(gp.sourcemaps.write())
         .pipe(browserSync.stream())
         .pipe(gulp.dest('./dist/css'));
