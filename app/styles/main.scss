@@ -2,14 +2,17 @@
 //======================
 @import "layout/reset";
 @import "layout/setups";
+@import "helpers/variables";
 @import "helpers/base";
 @import "helpers/mixins";
 @import "helpers/placeholders";
-@import "helpers/variables";
-
 
 
 //BLOCKS
 //=====================
 @import "blocks/header";
 @import "blocks/nav";
+
+//Pages
+//=====================
+@import "pages/home";

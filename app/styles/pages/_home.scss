@@ -1,0 +1,53 @@
+.hero {
+  position: relative;
+  background: url("../img/hero.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  min-height: 600px;
+  overflow: hidden;
+  text-align: center;
+  @extend %center;
+  &:before {
+    content: '';
+    @extend %stretch;
+    background: rgba(111, 123, 142, 0.57);
+  }
+}
+
+.hero__content {
+  position: relative;
+}
+
+.hero__head {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.features__list {
+  @extend %space-between;
+}
+
+.features__item {
+  max-width: 313px;
+  text-align: center;
+  margin-right: 6%;
+  &:last-child{margin-right: 0;}
+}
+
+.features__head {
+  color: $head_color;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+
+.features__desc {
+  line-height: 30px;
+  letter-spacing: 1px;
+}

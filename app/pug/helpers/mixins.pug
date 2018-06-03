@@ -4,3 +4,9 @@ mixin nav (items)
             each item in items
                 li.nav__item
                     a.nav__link= item
+
+
+mixin featurees (head, desc)
+    .features__item
+        .features__head= head
+        .features__desc= desc
