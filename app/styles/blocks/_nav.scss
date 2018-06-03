@@ -12,4 +12,6 @@
   font-weight: 600;
   color: $font-color;
   padding: 3px;
+  transition: .3s;
+  &:hover {color: $btn_color;}
 }
