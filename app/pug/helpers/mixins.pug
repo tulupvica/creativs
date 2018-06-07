@@ -1,9 +1,6 @@
-mixin nav (items)
-    nav.nav.header__nav
-        ul.nav__list
-            each item in items
-                li.nav__item
-                    a.nav__link= item
+mixin nav (item, link)
+    li.nav__item
+        a.nav__link(href= link)= item
 
 mixin featurees (head, desc)
     .features__item
@@ -26,3 +23,6 @@ mixin partners (link, img)
         .partners__img-wrap
             img.partners__img(src= img)
 
+mixin socials (link, class1, class2)
+    a.socials__link(href= link)
+        i(class='socials__icon', class= class1, class= class2)
