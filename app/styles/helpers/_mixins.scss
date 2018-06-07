@@ -1,0 +1,4 @@
+@mixin margin-right ($mr) {
+  margin-right: $mr;
+  &:last-child {margin-right: 0;}
+}

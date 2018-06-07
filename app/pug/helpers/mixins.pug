@@ -5,8 +5,24 @@ mixin nav (items)
                 li.nav__item
                     a.nav__link= item
 
-
 mixin featurees (head, desc)
     .features__item
         .features__head= head
         .features__desc= desc
+
+mixin work (img, head, desc, link)
+    .work__item
+        .work__img-wrap
+            img.work__img(src= img)
+        .details
+            .details__head= head
+            .details__desc= desc
+            a.details__link= link
+                span.details__icon
+
+mixin partners (link, img)
+    .partners__item
+        a.partners__link(href= link)
+        .partners__img-wrap
+            img.partners__img(src= img)
+

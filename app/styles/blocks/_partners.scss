@@ -1,0 +1,19 @@
+.partners__list {
+  @extend %space-between;
+}
+
+.partners__item {
+  position: relative;
+  @include margin-right(5%);
+}
+
+.partners__link {
+  @extend %stretch;
+}
+
+.partners__img {
+  @extend %responsive-img;
+  &-wrap {
+    max-width: 132px;
+  }
+}

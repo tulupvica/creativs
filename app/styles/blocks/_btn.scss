@@ -1,0 +1,12 @@
+.btn{
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: $btn_color;
+  transition: .3s;
+  &:hover{background: $btn_hover;}
+}
+
