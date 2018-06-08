@@ -1,0 +1,66 @@
+.intro {
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 80px;
+  letter-spacing: 1px;
+}
+
+.info {
+  @extend %space-between;
+}
+
+.info__item {
+  width: 48%;
+  text-align: center;
+}
+
+.info__head {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.info__text {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.team__list {
+  @extend %space-between;
+  flex-wrap: wrap;
+  margin: -18px 0;
+}
+
+.team__item {
+  width: 23%;
+  margin: 18px 0;
+}
+
+.team__photo {
+  max-width: 260px;
+  margin-bottom: 24px;
+}
+
+.team__img {
+  @extend %responsive-img;
+}
+
+.team__name {
+  color: $title_color;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+
+.team__job {
+  color: $btn_hover;
+  font-size: 12px;
+  font-weight: bold;
+}
+

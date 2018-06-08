@@ -7,21 +7,22 @@
 @import "helpers/mixins";
 @import "helpers/placeholders";
 
-
 //BLOCKS
 //=====================
 @import "blocks/socials";
 @import "blocks/nav";
 @import "blocks/btn";
 
-
-
 //SECTION
 //=====================
 @import "sections/header";
 @import "sections/partners";
+@import "sections/work";
+@import "sections/cta";
 @import "sections/footer";
 
 //Pages
 //=====================
 @import "pages/home";
+@import "pages/about";
+@import "pages/services";

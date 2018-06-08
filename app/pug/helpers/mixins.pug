@@ -26,3 +26,20 @@ mixin partners (link, img)
 mixin socials (link, class1, class2)
     a.socials__link(href= link)
         i(class='socials__icon', class= class1, class= class2)
+
+mixin team (photo, name1, job)
+    .team__item
+        .team__photo
+            img.team__img(src= photo)
+        h3.team__name= name1
+        h4.team__job= job
+
+mixin services (head, text)
+    .services__item
+        h3.services__head= head
+        p.services__text= text
+mixin process (icon, head)
+    .process__item
+        .process__icon
+            img.process__img(src= icon)
+        h3.process__head= head

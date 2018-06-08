@@ -13,9 +13,21 @@ html {
 }
 .title {
   color: $title_color;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 22px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 100px;
+}
+
+.page-title {
+  padding: 100px 0;
+}
+
+.main-title {
+  color: $title_color;
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: capitalize;
 }
