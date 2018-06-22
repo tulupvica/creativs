@@ -53,7 +53,7 @@ gulp.task('sass', function () {
         }))
         // .pipe(cssunit({
         //     type     :    'px-to-rem',
-        //     rootSize :    16
+        //     rootSize :    14
         // }))
         // .pipe(gp.csso())
         .pipe(gp.sourcemaps.write())

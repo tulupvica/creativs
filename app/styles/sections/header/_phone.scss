@@ -1,0 +1,11 @@
+.header {
+  @include mq('phone-wide'){
+    max-width: 95%;
+  }
+}
+
+.nav__list {
+  @include mq('phone-wide'){
+    display: none;
+  }
+}

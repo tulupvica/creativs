@@ -1,0 +1,41 @@
+.contacts__address {
+
+  @include mq('phone-wide') {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  @include mq('phone-small') {
+    font-size: 14px;
+  }
+
+}
+.contact__phone {
+
+  @include mq('phone-wide') {
+    font-size: 15px;
+  }
+
+  @include mq('phone-small') {
+    font-size: 14px;
+  }
+
+}
+
+.form__field {
+
+  @include mq('phone') {
+    width: 100%;
+    margin: 0 0 28px 0;
+  }
+
+}
+
+.form__textarea {
+
+  @include mq('phone') {
+    min-height: 142px;
+  }
+
+}

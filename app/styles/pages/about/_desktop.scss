@@ -1,6 +1,6 @@
 .intro {
   font-size: 18px;
-  line-height: 36px;
+  line-height: 32px;
   text-align: center;
   margin-bottom: 80px;
   letter-spacing: 1px;
@@ -8,6 +8,7 @@
 
 .info {
   @extend %space-between;
+  flex-wrap: wrap;
 }
 
 .info__item {
@@ -16,7 +17,7 @@
 }
 
 .info__head {
-  font-size: 20px;
+  font-size:17px;
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 36px;

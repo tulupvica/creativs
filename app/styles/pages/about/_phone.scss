@@ -1,0 +1,75 @@
+.intro {
+
+  @include mq('phone-wide') {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+}
+
+
+.info__item {
+  @include mq('phone-wide') {
+    width: 100%;
+    margin-right: 0;
+    @include margin-bottom(20px);
+  }
+}
+
+.info__head {
+
+  @include mq('phone-wide') {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
+}
+
+.info__text {
+
+  @include mq('phone-wide') {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
+
+.team__list {
+
+  @include mq('phone') {
+    margin: -14px 0;
+  }
+}
+
+.team__item {
+
+  @include mq('phone-wide') {
+    width: 46%;
+  }
+
+  @include mq('phone') {
+    margin: 14px 0;
+  }
+}
+
+.team__photo {
+
+  @include mq('phone') {
+    margin-bottom: 16px;
+  }
+}
+
+.team__name {
+
+  @include mq('phone') {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 6px;
+  }
+}
+
+.team__job {
+
+  @include mq('phone') {
+    font-size: 11px;
+  }
+}

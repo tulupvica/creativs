@@ -1,0 +1,31 @@
+.footer {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 25px 10px;
+  &-wrap {
+    background: #414751;
+  }
+
+  @include mq('desktop'){
+    max-width: 970px;
+  }
+
+  @include mq('tablet-wide'){
+    max-width: 750px;
+  }
+
+  @include mq('tablet'){
+    max-width: 580px;
+  }
+
+  @include mq('phone-wide'){
+    max-width: 95%;
+  }
+
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+}

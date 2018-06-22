@@ -1,29 +1,46 @@
 //ASSETS
 //======================
-@import "layout/reset";
-@import "layout/setups";
+@import "helpers/reset";
+@import "helpers/setups";
 @import "helpers/variables";
-@import "helpers/base";
 @import "helpers/mixins";
+@import "helpers/base";
 @import "helpers/placeholders";
 
-//BLOCKS
+//DESkTOP
 //=====================
 @import "blocks/socials";
-@import "blocks/nav";
 @import "blocks/btn";
 
-//SECTION
-//=====================
-@import "sections/header";
-@import "sections/partners";
-@import "sections/work";
-@import "sections/cta";
-@import "sections/footer";
+@import "sections/header/desktop";
+@import "sections/partners/desctop";
+@import "sections/work/desktop";
+@import "sections/cta/desktop";
+@import "sections/footer/desktop";
 
-//Pages
+@import "pages/home/desktop";
+@import "pages/about/desktop";
+@import "pages/services/desktop";
+@import "pages/contact/desktop";
+
+
+//TABLET
 //=====================
-@import "pages/home";
-@import "pages/about";
-@import "pages/services";
-@import "pages/contact";
+@import 'sections/header/tablet';
+@import 'pages/home/tablet';
+@import 'sections/work/tablet';
+@import 'pages/about/tablet';
+@import 'sections/cta/tablet';
+@import 'pages/services/tablet';
+@import 'pages/contact/tablet';
+
+
+//PHONE
+//=====================
+@import 'sections/header/phone';
+@import 'pages/home/phone';
+@import 'sections/work/phone';
+@import 'pages/about/phone';
+@import 'sections/cta/phone';
+@import 'pages/services/phone';
+@import 'pages/contact/phone';

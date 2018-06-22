@@ -1,0 +1,55 @@
+.services__list {
+
+  @include mq('tablet'){
+    margin: -30px 0;
+  }
+}
+
+.services__item {
+
+  @include mq('tablet'){
+    width: 48%;
+    margin: 30px 0;
+  }
+
+}
+
+.services__head {
+
+  @include mq('tablet-small'){
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+
+}
+
+.services__text {
+
+  @include mq('tablet-small'){
+    line-height: 26px;
+  }
+}
+
+
+
+.process__item {
+
+  &:after {
+    @include mq('tablet-wide'){
+      width: 52px;
+    }
+
+    @include mq('tablet'){
+      width: 40px;
+    }
+
+  }
+
+}
+
+.process__head {
+
+  @include mq('tablet'){
+    font-size: 14px;
+  }
+}

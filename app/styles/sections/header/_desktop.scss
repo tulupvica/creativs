@@ -1,0 +1,39 @@
+.header {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 36px 10px;
+  @extend %space-between;
+
+  @include mq('desktop'){
+    max-width: 970px;
+  }
+
+}
+
+.logo__link {
+  display: block;
+}
+
+.header__nav {
+  align-self: center;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  @include margin-right(34px);
+}
+
+.nav__link {
+  font-size: 15px;
+  font-weight: 600;
+  color: $title_color;
+  padding: 4px;
+  transition: .3s;
+  &:hover {color: $btn_color;}
+}
+
+
+

@@ -17,11 +17,15 @@
 .details {
   position: relative;
   right: 140px;
-  margin-top: 226px;
+  margin-top: 20%;
   max-width: 630px;
   padding: 80px;
   background: #fdfcfc;
   z-index: 1;
+
+  @include mq('desktop') {
+    padding: 50px;
+  }
 }
 
 .details__head {
@@ -39,7 +43,6 @@
   line-height: 30px;
   margin-bottom: 40px;
 }
-
 
 .details__link {
   color: #535659;
@@ -86,8 +89,3 @@
   }
 }
 
-.work__btn {
-  max-width: 230px;
-  margin: 0 auto;
-  padding: 30px 40px;
-}

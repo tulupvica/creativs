@@ -8,6 +8,9 @@
   width: 28%;
   margin: 40px 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .services__head {
@@ -27,21 +30,21 @@
 
 .process__list {
   @extend %space-between;
-  margin: 0 -9% 0 0;
+  margin: 0 -6% 0 0;
 }
 
 .process__item {
   width: 28%;
   @extend %center;
   flex-direction: column;
-  padding: 0 9% 0 0;
+  padding: 0 6% 0 0;
   position: relative;
-  @include margin-right(4%);
+  //@include margin-right(-4%);
 
   &:after {
     @extend %pseudo;
     background: url("../img/process_separator.png");
-    width: 60px;
+    width: 66px;
     height: 1px;
     top: 50%;
     right: 0;

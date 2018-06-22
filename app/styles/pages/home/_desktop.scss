@@ -31,10 +31,11 @@
 }
 
 .features__item {
-  max-width: 313px;
+  width: 28%;
   text-align: center;
-  margin-right: 6%;
-  &:last-child{margin-right: 0;}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .features__head {

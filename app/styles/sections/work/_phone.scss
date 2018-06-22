@@ -1,0 +1,48 @@
+.work__item {
+  @include mq('phone-wide') {
+    flex-direction: column;
+  }
+
+}
+
+.details {
+  @include mq('phone-wide') {
+    padding: 0;
+  }
+}
+
+.details__link {
+  @include mq('phone') {
+    font-size: 12px;
+  }
+}
+
+.work__img {
+  @include mq('phone-wide') {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  @include mq('phone-small') {
+    width: 100%;
+  }
+
+}
+
+.details__head {
+  @include mq('phone') {
+    font-size: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+.details__desc {
+  letter-spacing: 1px;
+
+  @include mq('phone') {
+    line-height: 24px;
+  }
+}

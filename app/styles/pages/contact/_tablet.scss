@@ -1,0 +1,59 @@
+.contacts__address {
+
+  @include mq('tablet') {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+
+  @include mq('tablet-small') {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+
+}
+.contact__phone {
+
+  @include mq('tablet') {
+    font-size: 18px;
+  }
+
+  @include mq('tablet-small') {
+    font-size: 16px;
+  }
+
+}
+
+.form__field {
+
+  @include mq('tablet-small') {
+    margin: 0 2% 35px 0;
+    padding: 12px 16px;
+  }
+
+  @include mq('') {
+
+  }
+
+
+
+  &::placeholder {
+    @include mq('tablet-small') {
+      font-size: 12px;
+    }
+  }
+
+}
+
+.form__textarea {
+
+  @include mq('tablet') {
+    min-height: 200px;
+  }
+
+  @include mq('tablet-small') {
+    min-height: 160px;
+  }
+
+}
