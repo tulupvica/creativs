@@ -98,9 +98,14 @@ gulp.task('fonts', function() {
         .pipe(gulp.dest('./dist/webfonts'));
 });
 
+gulp.task('video', function() {
+    return gulp.src('./app/video/**/*')
+        .pipe(gulp.dest('./dist/video'));
+});
 
 
-gulp.task('transfer', ['img', 'fonts', 'js-libs', 'css-libs']);
+
+gulp.task('transfer', ['img', 'fonts', 'video', 'js-libs', 'css-libs']);
 
 gulp.task('default', ['clean', 'transfer', 'server' ]);
 
