@@ -1,0 +1,55 @@
+.menu-btn {
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 30;
+}
+
+.menu-btn__line,
+.menu-btn__line:before,
+.menu-btn__line:after {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #0d0d14;
+  top: 50%;
+  margin-top: -1px;
+  margin-left: -10px;
+  left: 50%;
+}
+
+.menu-btn__line:before,
+.menu-btn__line:after {
+  @extend %pseudo;
+  transition: .3s;
+}
+
+.menu-btn__line:before {
+  transform: translateY(-6px);
+}
+
+.menu-btn__line:after {
+  transform: translateY(6px);
+}
+
+.menu-btn__active {
+
+  .menu-btn__line {
+    background: #fff;
+  }
+
+  .menu-btn__line:before {
+    transform: rotate(-35deg);
+    width: 10px;
+    transform-origin: left bottom;
+    background: #fff;
+  }
+
+  .menu-btn__line:after {
+    transform: rotate(35deg);
+    width: 10px;
+    transform-origin: left top;
+    background: #fff;
+  }
+}

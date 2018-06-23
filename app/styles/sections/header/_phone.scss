@@ -9,3 +9,9 @@
     display: none;
   }
 }
+
+.menu-btn {
+  @include mq('phone-wide'){
+    display: block;
+  }
+}
