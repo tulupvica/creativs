@@ -51,11 +51,11 @@ gulp.task('sass', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        // .pipe(cssunit({
-        //     type     :    'px-to-rem',
-        //     rootSize :    14
-        // }))
-        // .pipe(gp.csso())
+        .pipe(cssunit({
+            type     :    'px-to-rem',
+            rootSize :    14
+        }))
+        .pipe(gp.csso())
         .pipe(gp.sourcemaps.write())
         .pipe(browserSync.stream())
         .pipe(gulp.dest('./dist/css'));
@@ -83,7 +83,6 @@ gulp.task('js-libs', function() {
     return gulp.src(['./node_modules/jquery/dist/jquery.js'])
         .pipe(gp.concat('libs.min.js'))
         .pipe(gp.uglifyjs())
-        // .pipe(gp.rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/js'));
 });
 
