@@ -51,10 +51,10 @@ gulp.task('sass', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(cssunit({
-            type     :    'px-to-rem',
-            rootSize :    14
-        }))
+        // .pipe(cssunit({
+        //     type     :    'px-to-rem',
+        //     rootSize :    10
+        // }))
         .pipe(gp.csso())
         .pipe(gp.sourcemaps.write())
         .pipe(browserSync.stream())
@@ -62,10 +62,10 @@ gulp.task('sass', function () {
 });
 
 gulp.task('css-libs', function() {
-    return gulp.src('./app/libs/fontawesome-all.css')
+    return gulp.src(['./node_modules/slick-carousel/slick/slick.css'])
         .pipe(gp.concat('libs.min.css'))
         .pipe(gp.autoprefixer({
-            browsers: ['last 2 versions'],
+            browsers: ['last 4 versions'],
             cascade: false
         }))
         .pipe(gp.csso())
@@ -80,9 +80,12 @@ gulp.task('js', function() {
 });
 
 gulp.task('js-libs', function() {
-    return gulp.src(['./node_modules/jquery/dist/jquery.js'])
+    return gulp.src(['./node_modules/jquery/dist/jquery.js',
+                    './node_modules/slick-carousel/slick/slick.js'])
+        .pipe(gp.sourcemaps.init())
         .pipe(gp.concat('libs.min.js'))
         .pipe(gp.uglifyjs())
+        .pipe(gp.sourcemaps.write())
         .pipe(gulp.dest('./dist/js'));
 });
 
@@ -97,16 +100,11 @@ gulp.task('fonts', function() {
         .pipe(gulp.dest('./dist/webfonts'));
 });
 
-gulp.task('video', function() {
-    return gulp.src('./app/video/**/*')
-        .pipe(gulp.dest('./dist/video'));
-});
 
 
+gulp.task('transfer', ['img', 'fonts', 'js-libs', 'css-libs']);
 
-gulp.task('transfer', ['img', 'fonts', 'video', 'js-libs', 'css-libs']);
-
-gulp.task('default', ['clean', 'transfer', 'server' ]);
+gulp.task('default', ['clean', 'server', 'transfer' ]);
 
 
 

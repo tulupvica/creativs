@@ -1,11 +1,12 @@
 //ASSETS
 //======================
-@import "base/setups";
-@import "helpers/variables";
-@import "base/base";
-@import "base/fontello";
-@import "helpers/mixins";  ;
-@import "helpers/placeholders";
+
+//helpers
+@import "helpers/main";
+
+//base
+@import "base/main";
+
 
 
 //BLOCKS
@@ -20,7 +21,6 @@
 //=====================
 @import "sections/header";
 @import "sections/hero";
-
 @import "sections/footer";
 
 //SECTION

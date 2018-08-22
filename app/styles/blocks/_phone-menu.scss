@@ -4,8 +4,8 @@
   top: 0;
   width: 60%;
   height: 100vh;
-  @extend center;
-  background: rgba(34, 38, 47, 0.95);
+  @extend %center;
+  background: rgba(36,40,47,.96);
   z-index: 20;
   transition: .3s;
   transform: translateX(100%);
@@ -33,9 +33,11 @@
   width: 100%;
   text-align: center;
   font-size: 15px;
-  font-weight: 600;
   color: #fff;
   padding: 15px 0;
   transition: .3s;
   &:hover {color: $btn_color;}
+  font-family: $font-family;
+  font-weight: 600;
+  text-transform: uppercase;
 }

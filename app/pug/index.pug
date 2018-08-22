@@ -1,28 +1,65 @@
 extends templates/template
 
 block title
-    - var pageTitle = 'Creativs'
+    - var pageTitle = 'Test'
 
 block main
     section.hero
-        .hero__content
-            h2.hero__head
-                span Best Creative Studio
-                br
-                |We Make Great Ideas Happen
-
-    section.features
+        .big-container
+            .hero__content
+                h1.hero__head More About US
+    section.management
         .container
-            .features__list
-                +featurees("RNIM MINIM VENIAISI", "Aute irure dolor in reprehenderit intor voluptate velit esse cillum dolore euro fugiat nulla pariatur excepteur sintary occaecat cupidatat proident.")
-                +featurees("INTEGER RHONCUS LIBERO", "Aute irure dolor in reprehenderit intor voluptate velit esse cillum dolore euro fugiat nulla pariatur excepteur sintary occaecat cupidatat proident.")
-                +featurees("MAGNA VITAE DIACULIS", "Aute irure dolor in reprehenderit intor voluptate velit esse cillum dolore euro fugiat nulla pariatur excepteur sintary occaecat cupidatat proident.")
-    section.section-work.work
+            h2.title Management
+            .management__list.management__slider
+                .management__item.management__slide
+                    .img-wrap
+                        img(src='img/img-1.jpg' alt='img')
+                    .management__footer
+                        .human
+                            h3.human__name Courteney Cox
+                            h4.human__profesion Marketing Manager
+                        .socials
+                            +socials('#','icon-facebook','social-icon')
+                            +socials('#','icon-twitter','social-icon')
+                            +socials('#','icon-gplus','social-icon')
+                .management__item.management__slide
+                        .img-wrap
+                            img(src='img/img-2.jpg' alt='img')
+                        .management__footer
+                            .human
+                                h3.human__name Matt LeBlanc
+                                h4.human__profesion Finance Manager
+                            .socials
+                                +socials('#','icon-facebook','social-icon')
+                                +socials('#','icon-twitter','social-icon')
+                                +socials('#','icon-gplus','social-icon')
+                .management__item.management__slide
+                    .img-wrap
+                        img(src='img/img-3.jpg' alt='img')
+                    .management__footer
+                        .human
+                            h3.human__name David Schwimmer
+                            h4.human__profesion Creative Director
+                        .socials
+                            +socials('#','icon-facebook','social-icon')
+                            +socials('#','icon-twitter','social-icon')
+                            +socials('#','icon-gplus','social-icon')
+            .btn
+                a(href='#').btn__more Show All
+    section.testimonials
         .container
-            h2.title Our work
-            .work__list
-                +work('img/project1.jpg','EXCEPTEUR OCCAECAT CUPIDATAT','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo ...','DETAILS ')
-                +work('img/project2.jpg','EXCEPTEUR OCCAECAT CUPIDATAT','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo ...','DETAILS ')
-                a.btn.work__btn More projects
-    include sections/partners
-    
+            h2.title.testimonials__title WHAT OUR CLIENTS SAY
+            .testimonials__slider
+                .testimonials__slide
+                    .photo
+                        img.photo__img(src='img/client-photo.png' alt='photo')
+                    p.comment Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.
+                    h3.name Larry Jane
+                    h4.profesion General Manager
+                .testimonials__slide
+                    .photo
+                        img.photo__img(src='img/client-photo.png' alt='photo')
+                    p.comment Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.
+                    h3.name Larry Jane
+                    h4.profesion General Manager

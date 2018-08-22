@@ -1,45 +1,8 @@
-mixin nav (item, link)
-    li.nav__item
+mixin nav (item, link, class_name)
+    li.nav__item(class= class_name)
         a.nav__link(href= link)= item
 
-mixin featurees (head, desc)
-    .features__item
-        .features__head= head
-        .features__desc= desc
-
-mixin work (img, head, desc, link)
-    .work__item
-        .work__img-wrap
-            img.work__img(src= img)
-        .details
-            .details__head= head
-            .details__desc= desc
-            a.details__link= link
-                span.details__icon
-
-mixin partners (link, img)
-    .partners__item
-        a.partners__link(href= link)
-        .partners__img-wrap
-            img.partners__img(src= img)
-
-mixin socials (link, class1, class2)
+mixin socials (link, class2)
     a.socials__link(href= link)
-        i(class='socials__icon', class= class1, class= class2)
+        i(class='socials__icon', class= class2)
 
-mixin team (photo, name1, job)
-    .team__item
-        .team__photo
-            img.team__img(src= photo)
-        h3.team__name= name1
-        h4.team__job= job
-
-mixin services (head, text)
-    .services__item
-        h3.services__head= head
-        p.services__text= text
-mixin process (icon, head)
-    .process__item
-        .process__icon
-            img.process__img(src= icon)
-        h3.process__head= head
